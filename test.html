@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue.js Date Configuration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1 class="title">Date Configuration</h1>
+        <form @submit.prevent="saveDateConfiguration" class="form">
+            <label for="startDate" class="form-label">Start Date:</label>
+            <input type="date" id="startDate" v-model="startDate" class="form-input">
+            <br>
+            <label for="endDate" class="form-label">End Date:</label>
+            <input type="date" id="endDate" v-model="endDate" class="form-input">
+            <br>
+            <button type="submit" class="form-button">Save</button>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
